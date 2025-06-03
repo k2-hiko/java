@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>試験開始</title>
+	<!-- Bootstrapの読み込み（CDN経由） -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- 外部CSSファイルの読み込み -->
+	<link rel="stylesheet" th:href="@{/css/startExam.css}">
+</head>
+
+<body>
+	<!-- ナビゲーションバー -->
+	<div class="navbar-custom">
+		<!-- マイページリンク -->
+		<a href="/mypage">← マイページ</a>
+		<!-- ログアウトリンク -->
+		<a href="/logout">ログアウト</a>
+	</div>
+
+	<!-- 試験開始画面のコンテナ -->
+	<div class="exam-container mt-5">
+		<!-- ロゴ画像 -->
+		<img src="/images/itp-logo.png" alt="ITPロゴ" class="logo">
+
+		<!-- 試験タイトル -->
+		<div class="exam-title">雑学問題</div>
+
+		<!-- 試験説明 -->
+		<div class="exam-description">
+			<p><strong>【説明】</strong><br>10問の模擬問題で構成されている雑学問題です。</p>
+			<p><strong>【形式】</strong><br>四択問題</p>
+			<p><strong>【注意事項】</strong><br>
+				・各設問は1問につき1つの選択肢のみ選んでください。<br>
+				・回答後の戻る・修正はできません。<br>
+				・一度開始をしたら10問回答しきるまで終了できません。<br>
+				・慎重に選択してください。
+			</p>
+		</div>
+
+		<!-- 試験開始ボタン -->
+		<form th:action="@{/duringExam}" method="get">
+			<button type="submit" class="btn btn-primary exam-button">試験開始</button>
+		</form>
+	</div>
+</body>
+
+</html>

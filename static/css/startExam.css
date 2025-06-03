@@ -1,0 +1,71 @@
+/* 背景設定 */
+body {
+	background-image: url('/images/itp-back.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	font-family: 'Meiryo', sans-serif;
+}
+
+/* 試験開始画面の中央ボックス */
+.exam-container {
+	background-color: rgba(255, 255, 255, 0.95);
+	padding: 3rem;
+	border-radius: 20px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+	max-width: 600px;
+	width: 100%;
+	text-align: center;
+}
+
+/* タイトル */
+.exam-title {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+/* 説明文 */
+.exam-description {
+	text-align: left;
+	font-size: 1.1rem;
+	margin-bottom: 1.5rem;
+}
+
+/* 開始ボタン */
+.exam-button {
+	font-size: 1.2rem;
+	padding: 0.75rem 2rem;
+	border-radius: 10px;
+}
+
+/* ロゴ画像 */
+.logo {
+	width: 90px;
+	margin-bottom: 20px;
+}
+
+/* ナビゲーションバー（マイページ、ログアウト） */
+.navbar-custom {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	font-size: 1rem;
+}
+
+/* ナビゲーションバーのリンク */
+.navbar-custom a {
+	color: #000;
+	text-decoration: none;
+}

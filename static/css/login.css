@@ -1,0 +1,50 @@
+/* 背景画像設定 */
+body {
+	background-image: url('/images/itp-back.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ログインボックス */
+.login-container {
+	background-color: rgba(255, 255, 255, 0.95);
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	max-width: 400px;
+	text-align: center;
+}
+
+/* ロゴ画像 */
+.logo {
+	width: 100px;
+	margin-bottom: 20px;
+}
+
+/* フォームのテキストボックス */
+.form-control {
+	border-radius: 10px;
+	font-size: 16px;
+}
+
+/* ログインボタン */
+.btn-primary {
+	border-radius: 10px;
+}
+
+/* キャンセルボタン */
+.btn-outline-secondary {
+	border-radius: 10px;
+}
+
+/* 新規登録リンク */
+.register-link {
+	margin-top: 20px;
+}

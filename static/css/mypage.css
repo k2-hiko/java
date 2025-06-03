@@ -1,0 +1,73 @@
+/* 背景設定 */
+body {
+	background-image: url('/images/itp-back.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	margin: 0;
+	font-family: 'Meiryo', sans-serif;
+}
+
+/* ヘッダー（ユーザー名とログアウトリンク） */
+.header {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .user {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.logout {
+	color: #DC3545;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* メインコンテナ */
+.main-container {
+	background-color: rgba(255, 255, 255, 0.95);
+	margin: 40px auto;
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	max-width: 1200px;
+}
+
+/* セクションタイトル */
+h5 {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+/* 再試験ボタン */
+.retry-button {
+	background-color: #FFC107;
+	color: black;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+.retry-button:hover {
+	background-color: #E6B800;
+}
+
+/* テーブル周り */
+.table-wrap {
+	border: 1px solid #ccc;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #FDFDFD;
+}
+
+.scroll-table {
+	height: 500px;
+	overflow-y: auto;
+}

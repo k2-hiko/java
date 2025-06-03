@@ -1,0 +1,101 @@
+/* 背景設定 */
+body {
+	background-image: url('/images/itp-back.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Meiryo', sans-serif;
+}
+
+/* 結果表示用のコンテナ */
+.result-container {
+	background-color: rgba(255, 255, 255, 0.95);
+	/* 白背景の透過 */
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	/* 影 */
+	max-width: 600px;
+	width: 100%;
+	text-align: center;
+	/* 中央揃え */
+}
+
+/* タイトル */
+h1 {
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+/* 試験結果情報（スコア、日付、正解数） */
+.result-info {
+	font-size: 1.1rem;
+	margin-bottom: 0.5rem;
+}
+
+/* 問題別結果のボックス */
+.result-box {
+	margin: 30px auto 20px auto;
+	border: 1px solid #999;
+	border-radius: 10px;
+	padding: 15px;
+	width: 100%;
+	max-height: 250px;
+	/* 最大高さ */
+	overflow-y: auto;
+	/* スクロール表示 */
+	text-align: left;
+	/* 左揃え */
+	font-size: 1rem;
+	background-color: #fdfdfd;
+	/* 薄い背景色 */
+}
+
+/* 個別問題の枠 */
+.result-entry {
+	margin-bottom: 1rem;
+}
+
+/* 正解のスタイル */
+.correct {
+	color: green;
+	font-weight: bold;
+}
+
+/* 不正解のスタイル */
+.incorrect {
+	color: red;
+	font-weight: bold;
+}
+
+/* ボタンエリア */
+.button-area {
+	margin-top: 30px;
+}
+
+/* マイページボタンのスタイル */
+.mypage-button {
+	padding: 10px 25px;
+	font-size: 1rem;
+	border: 2px solid #007bff;
+	/* 枠線青 */
+	color: #007bff;
+	/* テキスト青 */
+	background-color: white;
+	/* 背景白 */
+	border-radius: 8px;
+	text-decoration: none;
+	/* 下線なし */
+	transition: 0.3s;
+	/* ホバーアニメーション */
+}
+
+/* マイページボタンのホバー時の背景色 */
+.mypage-button:hover {
+	background-color: #e6f0ff;
+}

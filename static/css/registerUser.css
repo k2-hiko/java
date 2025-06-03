@@ -1,0 +1,61 @@
+/* 背景設定 */
+body {
+	background-image: url('/images/itp-back.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Meiryo', sans-serif;
+}
+
+/* 登録画面の中央ボックス */
+.register-container {
+	background-color: rgba(255, 255, 255, 0.95);
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+}
+
+/* ロゴ画像 */
+.logo {
+	width: 100px;
+	margin-bottom: 20px;
+}
+
+/* 入力フィールド */
+.form-control {
+	border-radius: 10px;
+	font-size: 16px;
+}
+
+/* 登録ボタン */
+.btn-register {
+	background-color: #00aaff;
+	color: white;
+	font-size: 1.2rem;
+	padding: 0.6rem 2rem;
+	border: none;
+	border-radius: 10px;
+}
+
+.btn-register:hover {
+	background-color: #008ecc;
+}
+
+/* キャンセルボタン */
+.btn-outline-secondary {
+	border-radius: 10px;
+}
+
+/* ログインリンク */
+.login-link {
+	margin-top: 20px;
+	font-size: 1rem;
+}
